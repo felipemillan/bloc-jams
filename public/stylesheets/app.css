@@ -304,11 +304,102 @@ td.song-number {
     margin-top: -10px;
     margin-left: -10px; }
 
-/* line 6, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 1, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/buttons */
+.default-button {
+  background-color: #D2287B;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none; }
+  /* line 12, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/buttons */
+  .default-button:active {
+    background-color: #9B1D64;
+    outline: none; }
+  /* line 17, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/buttons */
+  .default-button:disabled {
+    background-color: #B3B3B3;
+    cursor: not-allowed; }
+
+/* line 2, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+.user-profile-header {
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px; }
+
+/* line 8, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+.user-image-container {
+  display: inline-block; }
+
+/* line 13, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
++ .tab-content.user-subscription .well {
+  background: transparent;
+  border: #D2287B 2px solid; }
+/* line 18, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
++ .tab-content.user-subscription + .subsection-label {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: white;
+  font-weight: 300; }
+/* line 26, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
++ .tab-content.user-subscription .table.credit-card-list td {
+  border-top-color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 16px; }
+/* line 32, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
++ .tab-content.user-subscription .fa-minus-circle {
+  color: #D2287B; }
+
+/* line 37, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+.user-profile-tabs-container {
+  margin: 42px auto 20px;
+  text-align: center; }
+  /* line 40, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+  .user-profile-tabs-container .pagination.profile-pagination {
+    font-weight: 700;
+    border: #D2287B 2px solid;
+    border-radius: 8px; }
+    /* line 45, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+    .user-profile-tabs-container .pagination.profile-pagination > li > a {
+      border: none;
+      background-color: transparent;
+      color: white;
+      letter-spacing: 2px; }
+    /* line 52, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+    .user-profile-tabs-container .pagination.profile-pagination > .active > a {
+      background-color: #D2287B;
+      border-radius: 4px; }
+
+/* line 61, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+.default-form label {
+  font-weight: 300;
+  font-size: 16px; }
+/* line 65, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+.default-form input {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 12px 10px; }
+
+/* line 75, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+.no-left-gutter {
+  padding-left: 0px; }
+
+/* line 79, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/profile */
+.no-right-gutter {
+  padding-right: 0px; }
+
+/* line 8, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 html {
   height: 100%; }
 
-/* line 10, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 12, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 body {
   font-family: 'Open Sans';
   color: white;
@@ -317,16 +408,16 @@ body {
   background: radial-gradient(#2b1339, #380c77);
   padding-bottom: 150px; }
 
-/* line 19, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 21, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 body.landing {
   background: #5B5579;
   padding-bottom: 0; }
 
-/* line 24, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 26, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 body.landing .navbar {
   margin-bottom: 0; }
 
-/* line 28, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 30, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
 
@@ -577,6 +668,80 @@ td.song-number {
     height: 20px;
     margin-top: -10px;
     margin-left: -10px; }
+
+.default-button {
+  background-color: #d2287b;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none; }
+  .default-button:active {
+    background-color: #9b1d64;
+    outline: none; }
+  .default-button:disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed; }
+
+.user-profile-header {
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px; }
+
+.user-image-container {
+  display: inline-block; }
+
++ .tab-content.user-subscription .well {
+  background: transparent;
+  border: #d2287b 2px solid; }
++ .tab-content.user-subscription + .subsection-label {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: white;
+  font-weight: 300; }
++ .tab-content.user-subscription .table.credit-card-list td {
+  border-top-color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 16px; }
++ .tab-content.user-subscription .fa-minus-circle {
+  color: #d2287b; }
+
+.user-profile-tabs-container {
+  margin: 42px auto 20px;
+  text-align: center; }
+  .user-profile-tabs-container .pagination.profile-pagination {
+    font-weight: 700;
+    border: #d2287b 2px solid;
+    border-radius: 8px; }
+    .user-profile-tabs-container .pagination.profile-pagination > li > a {
+      border: none;
+      background-color: transparent;
+      color: white;
+      letter-spacing: 2px; }
+    .user-profile-tabs-container .pagination.profile-pagination > .active > a {
+      background-color: #d2287b;
+      border-radius: 4px; }
+
+.default-form label {
+  font-weight: 300;
+  font-size: 16px; }
+.default-form input {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 12px 10px; }
+
+.no-left-gutter {
+  padding-left: 0px; }
+
+.no-right-gutter {
+  padding-right: 0px; }
 
 html {
   height: 100%; }
