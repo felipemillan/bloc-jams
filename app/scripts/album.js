@@ -92,7 +92,7 @@ var currentlyPlayingSong = null;
    return $row;
  };
 
-var changeAlbumView = function(album) {
+   var changeAlbumView = function(album) {
    // Update the album title
    var $albumTitle = $('.album-title');
    $albumTitle.text(album.name);
@@ -118,8 +118,20 @@ var changeAlbumView = function(album) {
      var $newRow = createSongRow(i + 1, songData.name, songData.length);
      $songList.append($newRow);
    }
- 
  };
+ 
+ var updateSeekPercentage = function($seekBar, event) {
+   var barWidth = $seekBar.width();
+   var offsetX = event.pageX - $seekBar.offset().left;
+ 
+   var offsetXPercent = (offsetX  / barWidth) * 100;
+   offsetXPercent = Math.max(0, offsetXPercent);
+   offsetXPercent = Math.min(100, offsetXPercent);
+ 
+   var percentageString = offsetXPercent + '%';
+   $seekBar.find('.fill').width(percentageString);
+   $seekBar.find('.thumb').css({left: percentageString});
+ }
  
 
 
@@ -130,6 +142,34 @@ if (document.URL.match(/\/album.html/)) {
  // Wait until the HTML is fully processed.
  $(document).ready(function() {
    changeAlbumView(albumPicasso);
+   setupSeekBars();
    
  });
 }
+
+ var setupSeekBars = function() {
+ 
+   $seekBars = $('.player-bar .seek-bar');
+   $seekBars.click(function(event) {
+     updateSeekPercentage($(this), event);
+   });
+   
+   $seekBars.find('.thumb').mousedown(function(event){
+    var $seekBar = $(this).parent();
+    
+    $seekBar.addClass('no-animate');
+ 
+    $(document).bind('mousemove.thumb', function(event){
+      updateSeekPercentage($seekBar, event);
+    });
+ 
+    //cleanup
+    $(document).bind('mouseup.thumb', function(){
+	  $seekBar.removeClass('no-animate');
+      $(document).unbind('mousemove.thumb');
+      $(document).unbind('mouseup.thumb');
+    });
+ 
+  });
+ 
+ };
