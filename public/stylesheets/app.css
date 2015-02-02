@@ -8,34 +8,36 @@ body {
   color: white;
   min-height: 100%;
   background: -webkit-radial-gradient(#2b1339, #380c77);
-  background: radial-gradient(#2b1339, #380c77); }
+  background: radial-gradient(#2b1339, #380c77);
+  padding-bottom: 150px; }
 
-/* line 13, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 14, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 body.landing {
-  background: #5B5579; }
+  background: #5B5579;
+  padding-bottom: 0; }
 
-/* line 17, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 19, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .hero-content {
   background: #2F1D57;
   padding: 100px; }
 
-/* line 22, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 24, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .hero-content h1 {
   font-size: 70px;
   margin-bottom: 50px;
   font-weight: 300; }
 
-/* line 28, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 30, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .selling-points {
   padding: 100px; }
 
-/* line 32, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 34, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .selling-points .point {
   width: 32%;
   float: left;
   padding: 0 0.5%; }
 
-/* line 38, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 40, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .selling-points .point h5 {
   font-size: 24px;
   font-weight: bold;
@@ -43,97 +45,97 @@ body.landing {
   text-align: center;
   height: 85px; }
 
-/* line 46, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 48, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .selling-points .point p {
   font-size: 14px; }
 
-/* line 53, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 55, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
 
-/* line 57, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 59, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 body.landing .navbar {
   margin-bottom: 0; }
 
-/* line 61, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 63, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .hero-content {
   background: #2F1D57;
   padding: 100px 0; }
 
-/* line 66, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 68, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .selling-points {
   padding: 100px 0; }
 
-/* line 69, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 71, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-header-container {
   margin-top: 55px;
   margin-bottom: 40px; }
 
-/* line 75, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 77, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-header-information {
   margin-top: 45px;
   margin-bottom: 20px; }
 
-/* line 81, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 83, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-header-information h3, .album-header-information h4, .album-header-information h5 {
   line-height: 150%; }
 
-/* line 88, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 90, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-header-information h3 {
   font-size: 48px;
   font-weight: 300; }
 
-/* line 93, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 95, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-header-information h4 {
   font-size: 24px;
   font-weight: 700; }
 
-/* line 98, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 100, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-header-information h5 {
   font-size: 16px;
   font-weight: 500; }
 
-/* line 104, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 106, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .table.album-song-listing {
   font-weight: 300; }
 
-/* line 110, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 112, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .table.album-song-listing td {
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
-/* line 115, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 117, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container {
   margin-top: 30px;
   margin-bottom: 20px; }
 
-/* line 119, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 121, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .caption {
   margin-top: 10px; }
 
-/* line 122, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 124, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .caption p {
   font-size: 16px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6); }
 
-/* line 127, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 129, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .caption p a {
   color: rgba(255, 255, 255, 0.6); }
 
-/* line 130, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 132, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .caption p a.album-name {
   color: white; }
 
-/* line 134, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 136, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container img {
   max-width: 100%; }
 
-/* line 138, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 140, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-album-image-container {
   position: relative; }
 
-/* line 142, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 144, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-album-image-overlay {
   position: absolute;
   top: 0px;
@@ -143,14 +145,14 @@ body.landing .navbar {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10; }
 
-/* line 152, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 154, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-overlay-content {
   position: absolute;
   bottom: 20px;
   width: 100%;
   text-align: center; }
 
-/* line 159, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 161, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-overlay-button {
   font-size: 20px;
   background-color: white;
@@ -160,21 +162,21 @@ body.landing .navbar {
   width: 42px;
   height: 42px; }
 
-/* line 169, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 171, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-overlay-button:hover {
   cursor: pointer;
   color: white;
   background-color: #d2287b; }
 
-/* line 175, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 177, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-overlay-button i {
   line-height: 42px; }
 
-/* line 179, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 181, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-overlay-button .fa-play {
   padding-left: 5px; }
 
-/* line 183, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 185, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-song-button {
   text-align: center;
   font-size: 14px;
@@ -185,29 +187,181 @@ body.landing .navbar {
   width: 28px;
   height: 28px; }
 
-/* line 194, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 196, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-song-button:hover {
   cursor: pointer;
   color: white;
   background-color: #d2287b; }
 
-/* line 200, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 202, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-song-button i {
   line-height: 28px; }
 
-/* line 204, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 206, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-song-button .fa-play {
   padding-left: 5px; }
 
-/* line 208, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 210, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .album-song-listing td {
   vertical-align: middle; }
 
-/* line 212, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+/* line 214, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 td.song-number {
   padding: 0;
   height: 70px;
   text-align: center; }
+
+/* line 220, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 100; }
+
+/* line 231, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar a, .player-bar a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: none; }
+
+/* line 238, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .container {
+  display: table;
+  padding: 0;
+  min-height: 100%; }
+
+/* line 244, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar-control-group {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* line 249, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .left-controls {
+  width: 25%;
+  text-align: left; }
+
+/* line 254, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .right-controls {
+  width: 25%;
+  text-align: right; }
+
+/* line 259, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .play-controls a {
+  font-size: 20px;
+  vertical-align: middle; }
+
+/* line 264, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .play-controls .previous {
+  margin-right: 65px; }
+
+/* line 268, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .play-controls .play-pause {
+  margin-right: 60px;
+  font-size: 30px; }
+
+/* line 273, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .currently-playing {
+  width: 50%;
+  text-align: center;
+  position: relative; }
+
+/* line 280, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .currently-playing .song-name, .player-bar .currently-playing .artist-name {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300; }
+
+/* line 291, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .currently-playing .song-name {
+  top: 20px; }
+
+/* line 295, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .currently-playing .artist-name {
+  bottom: 20px; }
+
+/* line 299, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.seek-control {
+  position: relative; }
+
+/* line 303, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.seek-control .current-time {
+  position: absolute;
+  top: 10px; }
+
+/* line 308, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.seek-control .total-time {
+  position: absolute;
+  right: 0;
+  top: 10px; }
+
+/* line 314, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.seek-bar {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer; }
+
+/* line 322, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.seek-bar .fill {
+  background: white;
+  width: 36%;
+  height: 5px;
+  border-radius: 2px; }
+
+/* line 329, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.seek-bar .thumb {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: white;
+  left: 36%;
+  margin-left: -5px;
+  top: 50%;
+  margin-top: -5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out; }
+
+/* line 343, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.seek-bar:hover .thumb {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px; }
+
+/* line 350, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .queue-toggle {
+  display: inline-block;
+  margin-left: 75px; }
+
+/* line 355, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .queue-toggle i {
+  font-size: 20px; }
+
+/* line 359, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .volume {
+  display: inline-block; }
+
+/* line 363, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .volume i {
+  width: 40px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 369, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.player-bar .volume .seek-bar {
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle; }
 
 html {
   height: 100%; }
@@ -217,10 +371,12 @@ body {
   color: white;
   min-height: 100%;
   background: -webkit-radial-gradient(#2b1339, #380c77);
-  background: radial-gradient(#2b1339, #380c77); }
+  background: radial-gradient(#2b1339, #380c77);
+  padding-bottom: 150px; }
 
 body.landing {
-  background: #5b5579; }
+  background: #5b5579;
+  padding-bottom: 0; }
 
 .hero-content {
   background: #2f1d57;
@@ -379,6 +535,133 @@ td.song-number {
   padding: 0;
   height: 70px;
   text-align: center; }
+
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 100; }
+
+.player-bar a, .player-bar a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: none; }
+
+.player-bar .container {
+  display: table;
+  padding: 0;
+  min-height: 100%; }
+
+.player-bar-control-group {
+  display: table-cell;
+  vertical-align: middle; }
+
+.player-bar .left-controls {
+  width: 25%;
+  text-align: left; }
+
+.player-bar .right-controls {
+  width: 25%;
+  text-align: right; }
+
+.player-bar .play-controls a {
+  font-size: 20px;
+  vertical-align: middle; }
+
+.player-bar .play-controls .previous {
+  margin-right: 65px; }
+
+.player-bar .play-controls .play-pause {
+  margin-right: 60px;
+  font-size: 30px; }
+
+.player-bar .currently-playing {
+  width: 50%;
+  text-align: center;
+  position: relative; }
+
+.player-bar .currently-playing .song-name, .player-bar .currently-playing .artist-name {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300; }
+
+.player-bar .currently-playing .song-name {
+  top: 20px; }
+
+.player-bar .currently-playing .artist-name {
+  bottom: 20px; }
+
+.seek-control {
+  position: relative; }
+
+.seek-control .current-time {
+  position: absolute;
+  top: 10px; }
+
+.seek-control .total-time {
+  position: absolute;
+  right: 0;
+  top: 10px; }
+
+.seek-bar {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer; }
+
+.seek-bar .fill {
+  background: white;
+  width: 36%;
+  height: 5px;
+  border-radius: 2px; }
+
+.seek-bar .thumb {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: white;
+  left: 36%;
+  margin-left: -5px;
+  top: 50%;
+  margin-top: -5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out; }
+
+.seek-bar:hover .thumb {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px; }
+
+.player-bar .queue-toggle {
+  display: inline-block;
+  margin-left: 75px; }
+
+.player-bar .queue-toggle i {
+  font-size: 20px; }
+
+.player-bar .volume {
+  display: inline-block; }
+
+.player-bar .volume i {
+  width: 40px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.player-bar .volume .seek-bar {
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle; }
 
 
 /*# sourceMappingURL=app.css.map*/
