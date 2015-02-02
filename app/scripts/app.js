@@ -1,4 +1,4 @@
- //require('./landing');
+//require('./landing');
  //require('./album');
  //require('./collection');
  //require('./profile');
@@ -129,9 +129,16 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
 
  blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
     $scope.songPlayer = SongPlayer;
+
+     SongPlayer.onTimeUpdate(function(event, time){
+     $scope.$apply(function(){
+       $scope.playTime = time;
+     });
+   });
+ 
   }]);
  
- blocJams.service('SongPlayer', function() {
+ blocJams.service('SongPlayer', ['$rootScope', function($rootScope) {
 
   var currentSoundFile = null;
 
@@ -173,6 +180,7 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
        var song = this.currentAlbum.songs[currentTrackIndex];
        this.setSong(this.currentAlbum, song);
      },
+
      seek: function(time) {
        // Checks to make sure that a sound file is playing before seeking.
        if(currentSoundFile) {
@@ -180,21 +188,31 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
          currentSoundFile.setTime(time);
        }
      },
+
+     onTimeUpdate: function(callback) {
+      return $rootScope.$on('sound:timeupdate', callback);
+    },
+     
      setSong: function(album, song) {
       if (currentSoundFile) {
       currentSoundFile.stop();
     }
        this.currentAlbum = album;
        this.currentSong = song;
+
        currentSoundFile = new buzz.sound(song.audioUrl, {
-      formats: [ "mp3" ],
-      preload: true
-    });
+          formats: [ "mp3" ],
+          preload: true
+        });
+
+       currentSoundFile.bind('timeupdate', function(e){
+          $rootScope.$broadcast('sound:timeupdate', this.getTime());
+        });
  
-    this.play();
+        this.play();
      }
    };
- });
+ }]);
 
  blocJams.directive('slider', ['$document', function($document){
 
@@ -207,7 +225,8 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
      offsetXPercent = Math.min(1, offsetXPercent);
      return offsetXPercent;
    }
-      var numberFromValue = function(value, defaultValue) {
+
+   var numberFromValue = function(value, defaultValue) {
      if (typeof value === 'number') {
        return value;
      }
@@ -220,7 +239,7 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
        return Number(value);
      }
    }
- 
+
    return {
      templateUrl: '/templates/directives/slider.html', // We'll create these files shortly.
      replace: true,
@@ -232,12 +251,7 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
        scope.value = 0;
        scope.max = 100;
        var $seekBar = $(element);
-              var notifyCallback = function(newValue) {
-         if(typeof scope.onChange === 'function') {
-           scope.onChange({value: newValue});
-         }
-       };
-        
+       
       attributes.$observe('value', function(newValue) {
         scope.value = numberFromValue(newValue, 0);
       });
@@ -245,11 +259,11 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
       attributes.$observe('max', function(newValue) {
         scope.max = numberFromValue(newValue, 100) || 100;
       });
- 
+
        var percentString = function () {
-            var value = scope.value || 0;
-		    var max = scope.max || 100;
-		    percent = value / max * 100;
+         var value = scope.value || 0;
+         var max = scope.max || 100;
+         percent = value / max * 100;
          return percent + "%";
        }
  
@@ -271,8 +285,9 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
          $document.bind('mousemove.thumb', function(event){
            var percent = calculateSliderPercentFromMouseEvent($seekBar, event);
            scope.$apply(function(){
-             scope.value = percent * scope.max;
-             notifyCallback(scope.value);
+           scope.value = percent * scope.max;
+           notifyCallback(scope.value);
+
            });
          });
  
@@ -281,6 +296,12 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
            $document.unbind('mousemove.thumb');
            $document.unbind('mouseup.thumb');
          });
+       }
+
+       var notifyCallback = function(newValue) {
+         if(typeof scope.onChange === 'function') {
+           scope.onChange({value: newValue});
+         }
        };
      }
    };
@@ -288,11 +309,40 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
 
  }]);
 
- blocJams.directive('helloThere', function() {
+ blocJams.filter('timecode', function(){
+   return function(seconds) {
+     seconds = Number.parseFloat(seconds);
+ 
+     // Returned when no time is provided.
+     if (Number.isNaN(seconds)) {
+       return '-:--';
+     }
+ 
+     // make it a whole number
+     var wholeSeconds = Math.floor(seconds);
+ 
+     var minutes = Math.floor(wholeSeconds / 60);
+ 
+     remainingSeconds = wholeSeconds % 60;
+ 
+     var output = minutes + ':';
+ 
+     // zero pad seconds, so 9 seconds should be :09
+     if (remainingSeconds < 10) {
+       output += '0';
+     }
+ 
+     output += remainingSeconds;
+ 
+     return output;
+   }
+ })
+
+ blocJams.directive('clickMeMe', function() {
   return {
   templateUrl: '/templates/directives/clickme.html',
   replace: true,
-  restrict: 'C',
+  restrict: 'EAC',
   link: function(scope, element) {
    $(element).click(function(event) {
     alert("You clicked me!");
@@ -300,19 +350,3 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
   }
 };
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
