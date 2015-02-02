@@ -275,6 +275,7 @@ if (document.URL.match(/\/album.html/)) {
  //require('./profile');
  
 angular.module('BlocJams', []).controller('Landing.controller', ['$scope', function($scope) {
+  $scope.titleText = "Bloc Jams";
   $scope.subText = "Turn the music up!";
  
    $scope.subTextClicked = function() {
