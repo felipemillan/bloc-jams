@@ -4,10 +4,11 @@
  //require('./profile');
  
 angular.module('BlocJams', []).controller('Landing.controller', ['$scope', function($scope) {
+  $scope.preText = "Bloc Jams"
   $scope.subText = "Turn the music up!";
  
    $scope.subTextClicked = function() {
-     $scope.subText += '!';
+     $scope.subText += '!!!!!!!!';
    };
    
    $scope.albumURLs = [
@@ -22,4 +23,13 @@ angular.module('BlocJams', []).controller('Landing.controller', ['$scope', funct
      '/images/album-placeholders/album-9.jpg',
    ];
    
+   
+   
 }]);
+
+function shuffle(o){ //v1.0
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+};
+
+shuffle([1,2,3]);
