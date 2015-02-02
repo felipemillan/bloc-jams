@@ -245,7 +245,7 @@ td.song-number {
       display: inline-block;
       vertical-align: middle; }
     /* line 88, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
-    .player-bar .volume .seek-bar {
+    .player-bar .volume .slider {
       display: inline-block;
       width: 100px;
       vertical-align: middle; }
@@ -269,20 +269,20 @@ td.song-number {
     top: 10px; }
 
 /* line 115, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
-.seek-bar {
+.slider {
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
   position: relative;
   cursor: pointer; }
   /* line 122, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
-  .seek-bar .fill {
+  .slider .fill {
     background: white;
     width: 36%;
     height: 5px;
     border-radius: 2px; }
   /* line 129, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
-  .seek-bar .thumb {
+  .slider .thumb {
     position: absolute;
     height: 10px;
     width: 10px;
@@ -295,10 +295,10 @@ td.song-number {
     cursor: pointer;
     transition: all 100ms ease-in-out; }
   /* line 144, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
-  .seek-bar.no-animate .fill, .seek-bar.no-animate .thumb {
+  .slider.no-animate .fill, .slider.no-animate .thumb {
     transition: none; }
   /* line 149, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
-  .seek-bar:hover .thumb {
+  .slider:hover .thumb {
     width: 20px;
     height: 20px;
     margin-top: -10px;
