@@ -420,6 +420,16 @@ body.landing .navbar {
 /* line 30, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
+  /* line 33, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+  .player-header-nav .navbar-nav a {
+    line-height: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2; }
+    /* line 40, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+    .player-header-nav .navbar-nav a:hover {
+      color: rgba(123, 70, 163, 0.9); }
 
 .hero-content {
   background-color: #2f1d57;
@@ -763,6 +773,14 @@ body.landing .navbar {
 
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
+  .player-header-nav .navbar-nav a {
+    line-height: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2; }
+    .player-header-nav .navbar-nav a:hover {
+      color: rgba(123, 70, 163, 0.9); }
 
 
 /*# sourceMappingURL=app.css.map*/
