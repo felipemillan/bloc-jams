@@ -173,3 +173,38 @@ body.landing .navbar {
 /* line 179, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
 .collection-album-container .collection-overlay-button .fa-play {
   padding-left: 5px; }
+
+/* line 183, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.album-song-button {
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  color: #d2287b;
+  border-radius: 50% 50%;
+  display: inline-block;
+  width: 28px;
+  height: 28px; }
+
+/* line 194, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.album-song-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #d2287b; }
+
+/* line 200, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.album-song-button i {
+  line-height: 28px; }
+
+/* line 204, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.album-song-button .fa-play {
+  padding-left: 5px; }
+
+/* line 208, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+.album-song-listing td {
+  vertical-align: middle; }
+
+/* line 212, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/app.scss */
+td.song-number {
+  padding: 0;
+  height: 70px;
+  text-align: center; }
