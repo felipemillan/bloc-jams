@@ -16,3 +16,10 @@ $(document).ready(function() {
  
     $('.selling-points .point').hover(onHoverAction, offHoverAction);
   });
+  
+  $(document).ready(function() {
+    $('.hero-content h3').click(function(){
+        var subText = $(this).text();
+        $(this).text(subText + "!");
+    });
+});
