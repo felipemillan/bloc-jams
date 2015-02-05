@@ -4303,7 +4303,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   z-index: 1000;
   min-height: 50px;
-  border: 1px solid transparent;
+  border: 1px solid transparent; 
 }
 .navbar:before,
 .navbar:after {
