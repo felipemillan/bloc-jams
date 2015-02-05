@@ -640,6 +640,7 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
   }
 };
 });
+
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
