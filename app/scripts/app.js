@@ -370,3 +370,27 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
 };
 });
 
+
+blocJams.controller('DemoCtrl', function($scope, $aside) {
+  // Show a basic aside from a controller
+  var myAside = $aside({title: 'My Title', content: 'My Content', show: true});
+
+  // Pre-fetch an external template populated with a custom scope
+  var myOtherAside = $aside({scope: $scope, template: '/templates/aside.html'});
+  // Show when some event occurs (use $promise property to ensure the template has been loaded)
+  myOtherAside.$promise.then(function() {
+    myOtherAside.show();
+  })
+})
+
+blocJams.controller('DemoCtrl', function($scope, $modal) {
+  // Show a basic modal from a controller
+  var myModal = $modal({title: 'My Title', content: 'My Content', show: true});
+
+  // Pre-fetch an external template populated with a custom scope
+  var myOtherModal = $modal({scope: $scope, template: '/templates/aside.html', show: false});
+  // Show when some event occurs (use $promise property to ensure the template has been loaded)
+  $scope.showModal = function() {
+    myOtherModal.$promise.then(myOtherModal.show);
+  };
+})
