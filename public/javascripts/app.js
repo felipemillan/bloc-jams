@@ -325,8 +325,8 @@ if (document.URL.match(/\/album.html/)) {
  
 
   blocJams.controller('Landing.controller', ['$scope', function($scope) {
-  $scope.title = "Bloc Jams";
-  $scope.subText = "Turn the music up!";
+  $scope.preText = "Music without limits.";
+  $scope.subText = "Listen to the right music, wherever you are!";
 
   $scope.subTextClicked = function() {
      $scope.subText += '!';
@@ -641,6 +641,7 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
 };
 });
 
+
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
@@ -712,6 +713,91 @@ if (document.URL.match(/\/collection.html/)) {
 }
 });
 
+;require.register("scripts/flip", function(exports, require, module) {
+angular.module('angular-flip', [])
+.directive('flip', function() {
+    return {
+        restrict: 'E',
+        transclude: true,
+        replace: true,
+        scope: {
+            flipped: '=?'
+        },
+        template:
+            '<div class="flip">' +
+                '<div class="card" ng-transclude></div>' +
+            '</div>',
+        controller: ['$scope', '$element', function($scope, $element) {
+            this.toggle = function() {
+                var flipped = !$element.hasClass('flipped');
+                $scope.$apply(function() {
+                    $scope.flipped = flipped;
+                })
+            };
+
+            this.flipFront = function() {
+                $scope.flipped = false;
+            };
+
+            this.flipBack = function() {
+                $scope.flipped = true;
+            }
+        }],
+        link: function(scope, elm, attrs) {
+            scope.$watch('flipped', function(newValue, oldValue) {
+                if (newValue) {
+                    elm.addClass('flipped');
+                } else {
+                    elm.removeClass('flipped');
+                }
+            });
+        }
+    }
+})
+.directive('flipFront', function() {
+    return {
+        require: '^flip',
+        restrict: 'E',
+        replace: true,
+        transclude: true,
+        template:
+            '<div class="face front" ng-transclude></div>'
+    }
+})
+.directive('flipBack', function() {
+    return {
+        require: '^flip',
+        restrict: 'E',
+        replace: true,
+        transclude: true,
+        template:
+            '<div class="face back" ng-transclude></div>'
+    }
+})
+.directive('flipToggle', function() {
+    return {
+        require: '^flip',
+        restrict: 'A',
+        link: function(scope, elm, attrs, controller) {
+            var previousValue;
+
+            attrs.$observe('flipToggle', function(value) {
+                if (!value) {
+                    value = 'click'
+                }
+
+                if (previousValue) elm.off(previousValue, controller.toggle);
+
+                previousValue = value;
+
+                elm.on(value, controller.toggle);
+            });
+        }
+    }
+});
+
+});
+
 ;require.register("scripts/landing", function(exports, require, module) {
 $(document).ready(function() { 
     $('.hero-content h3').click(function(){
@@ -725,7 +811,6 @@ $(document).ready(function() {
    };
  
    var offHoverAction = function(event) {
-     console.log('Off-hover action triggered.');
      $(this).animate({'margin-top': '0px'});
    };
  

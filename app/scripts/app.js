@@ -54,8 +54,8 @@
  
 
   blocJams.controller('Landing.controller', ['$scope', function($scope) {
-  $scope.title = "Bloc Jams";
-  $scope.subText = "Turn the music up!";
+  $scope.preText = "Music without limits.";
+  $scope.subText = "Listen to the right music, wherever you are!";
 
   $scope.subTextClicked = function() {
      $scope.subText += '!';
@@ -369,3 +369,4 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
   }
 };
 });
+

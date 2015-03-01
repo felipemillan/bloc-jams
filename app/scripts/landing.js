@@ -10,7 +10,6 @@ $(document).ready(function() {
    };
  
    var offHoverAction = function(event) {
-     console.log('Off-hover action triggered.');
      $(this).animate({'margin-top': '0px'});
    };
  
