@@ -480,6 +480,21 @@ td.song-number {
     margin-top: -10px;
     margin-left: -10px; }
 
+@media screen and (max-width: 991px) {
+  /* line 161, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
+  .player-bar .left-controls {
+    text-align: center; }
+  /* line 165, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
+  .player-bar .play-controls .previous {
+    margin-right: 25px; }
+  /* line 168, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
+  .player-bar .play-controls .play-pause {
+    margin-right: 25px; }
+  /* line 172, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/player_bar */
+  .player-bar .currently-playing {
+    width: 40%; }
+ }
+
 /* line 1, /Volumes/Macintosh HD/Users/felipemillan/bloc-vagrant/bloc-jams/app/stylesheets/buttons */
 .default-button {
   background-color: #D2287B;

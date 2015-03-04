@@ -155,3 +155,25 @@
     }
  
   }
+  
+  @media screen and (max-width: 991px) {
+  	.player-bar { 
+  		.left-controls {
+  			text-align: center;
+		}
+  		.play-controls  {
+	  		.previous {
+  				margin-right: 25px;
+  			}
+  			.play-pause {
+  				margin-right: 25px;
+  			}	
+		}
+		.currently-playing {
+			width: 40%;
+		}
+	  	}
+	}
+
+@media screen and (max-width: 510px) {
+} 
