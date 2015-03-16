@@ -714,7 +714,8 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 /* flip speed goes here */
 .flipper {
@@ -752,6 +753,9 @@ img {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888888; }
+
+.album-name ng-binding {
+  text-align: center; }
 
 @media screen and (min-width: 769px) {
   .navbar-default .navbar-toggle .icon-bar {
@@ -948,7 +952,7 @@ td.song-number {
   left: 0;
   right: 0;
   height: 150px;
-  background: rgba(255, 255, 255, 0.3);
+  background: #7b46a3;
   z-index: 100; }
   .player-bar a, .player-bar a:hover {
     color: white;
@@ -978,6 +982,7 @@ td.song-number {
     position: relative; }
     .player-bar .currently-playing .song-name, .player-bar .currently-playing .artist-name {
       text-align: center;
+      font-size: 12px;
       margin: 0;
       position: absolute;
       width: 100%;
@@ -1049,18 +1054,6 @@ td.song-number {
     height: 20px;
     margin-top: -10px;
     margin-left: -10px; }
-
-@media screen and (max-width: 991px) {
-  .player-bar .left-controls {
-    text-align: center; }
-  .player-bar .play-controls .previous {
-    margin-right: 25px; }
-  .player-bar .play-controls .play-pause {
-    margin-right: 25px; }
-  .player-bar .currently-playing {
-    width: 40%; } }
-
-@media screen and (max-width: 510px) { }
 
 .default-button {
   background-color: #d2287b;
@@ -1171,6 +1164,9 @@ div.navbar-header > a {
     font-family: 'Oswald', sans-serif; }
     .player-header-nav .navbar-nav a:hover {
       color: rgba(0, 0, 0, 0.9); }
+
+.back p a.album-name ng-binding {
+  text-align: center; }
 
 img {
   width: 100%; }

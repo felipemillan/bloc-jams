@@ -1,0 +1,110 @@
+@media screen and (max-width: 749px) {
+
+/* Landing Page and Global Styles */
+  .player-header-nav {
+
+    .navbar-nav {
+      li {
+        text-align: center;
+      }
+    }
+  }
+
+/* Landing Page template styles */ 
+
+    .hero-content {
+      background: #2F1D57;
+      padding: 100px 0;
+      
+      h1, h3 {
+        text-align: center;
+        color: #fff;
+      }
+    }
+    
+    .selling-points {
+      padding: 0 20px;
+
+      .point {
+        width: 100%;
+        padding: 1.6em 0.75em;
+        position: relative;
+
+        h5 {
+          height: 2.25em;
+          margin-bottom: 2px;
+          font-size: 1.7em;
+        }
+        p {
+          text-align: center;
+          font-size: 1.2em;
+          }
+        }
+      }
+    
+    .landing-album-list {
+      /* Example class added to style the album covers for mobile */
+      .album-cover {
+        position: relative;
+        left: calc(50% - 200px);
+      }
+    }
+  
+
+/* Collection View */
+
+  .collection-album-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px; /* Width of the album image. */
+  }
+
+/* Player Bar View */
+
+ .player-bar {
+
+  .left-controls {
+   width: 100%;
+   text-align: center;
+   margin-top: 5px;
+   }
+
+  .player-bar-control-group {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    .song-name, .artist-name {
+        text-align: center;
+        font-size: 1em;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        font-weight: 300;
+        }
+
+    }
+    .seek-control {
+      position: relative;
+      padding: 50px;
+
+      .current-time {
+      position: relative;
+      float: left;
+      font-size: 1em;
+      }
+
+      .total-time {
+      position: relative;
+      float: right;
+      font-size: 1em;
+
+    }
+
+
+    }
+
+   }  /* END OF PLAYER BAR VIEW */
+ 
+} /* END OF MEDIA CSS */

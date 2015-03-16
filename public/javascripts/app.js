@@ -276,20 +276,19 @@ if (document.URL.match(/\/album.html/)) {
  
  // Example album.
  var albumPicasso = {
-   name: 'The Colors',
-   artist: 'Pablo Picasso',
-   label: 'Cubism',
-   year: '1881',
-   albumArtUrl: '/images/album-placeholder.png',
- 
-   songs: [
-      { name: 'Blue', length: 163.38, audioUrl: '/music/placeholders/blue' },
-      { name: 'Green', length: 105.66 , audioUrl: '/music/placeholders/green' },
-      { name: 'Red', length: 270.14, audioUrl: '/music/placeholders/red' },
-      { name: 'Pink', length: 154.81, audioUrl: '/music/placeholders/pink' },
-      { name: 'Magenta', length: 375.92, audioUrl: '/music/placeholders/magenta' }
-     ]
- };
+        name: 'The Colorss',
+        artist: 'Pablo Picasso',
+        label: 'Cubism',
+        year: '1881',
+        albumArtUrl: '../assets/images/album-placeholder.png',
+        songs: [
+            { name: 'Blue', length: 163.38, audioUrl: '../assets/music/placeholders/blue' },
+            { name: 'Green', length: 105.66, audioUrl: '../assets/music/placeholders/green' },
+            { name: 'Red', length: 270.14, audioUrl: '../assets/music/placeholders/red' },
+            { name: 'Pink', length: 154.81, audioUrl: '../assets/music/placeholders/pink' },
+            { name: 'Magenta', length: 375.92, audioUrl: '../assets/music/placeholders/magenta' }
+        ]
+    };
  
 
  blocJams = angular.module('BlocJams', ['ui.router']);
@@ -344,10 +343,7 @@ if (document.URL.match(/\/album.html/)) {
      '/images/album-placeholders/album-9.jpg',
    ];
 
-   $scope.shuffle = function(albumURLs) { //v1.0
-    for(var j, x, i = $scope.albumURLs.length; i; j = Math.floor(Math.random() * i), x = $scope.albumURLs[--i], $scope.albumURLs[i] = $scope.albumURLs[j], $scope.albumURLs[j] = x);
-    return $scope.albumURLs;
-    };
+	   $scope.album = angular.copy(albumPicasso);
 
  }]);
 
@@ -356,47 +352,46 @@ blocJams.controller('Song.controller', ['$scope', function($scope) {
   
  }]);
 
- blocJams.controller('Collection.controller', ['$scope','SongPlayer', function($scope, SongPlayer) {
-   $scope.albums = [];
-   for (var i = 0; i < 33; i++) {
-     $scope.albums.push(angular.copy(albumPicasso));
-   }
-   
-   $scope.playAlbum = function(album){
-     SongPlayer.setSong(album, album.songs[0]); // Targets first song in the array.
-   }
- }]);
+ blocJams.controller('Collection.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
+       $scope.albums = [];
+        for (var i = 0; i < 33; i++) {
+          $scope.albums.push(angular.copy(albumPicasso));
+        }
+
+        $scope.playAlbum = function(album) {
+          SongPlayer.setSong(album, album.songs[0]); // first song in the array
+        }
+
+  }])
 
  blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
    $scope.album = angular.copy(albumPicasso);
+
    var hoveredSong = null;
- 
+
    $scope.onHoverSong = function(song) {
-     hoveredSong = song;
-   };
- 
-   $scope.offHoverSong = function(song) {
-     hoveredSong = null;
+    hoveredSong = song;
    };
 
    $scope.getSongState = function(song) {
-     if (song === SongPlayer.currentSong && SongPlayer.playing) {
-       return 'playing';
-     }
-     else if (song === hoveredSong) {
-       return 'hovered';
-     }
-     return 'default';
+    if (song === SongPlayer.currentSong && SongPlayer.playing) {
+      return 'playing';
+    }
+    else if (song === hoveredSong) {
+      return 'hovered';
+    }
+    return 'default';
    };
 
    $scope.playSong = function(song) {
-     SongPlayer.setSong($scope.album, song);
-    };
- 
-    $scope.pauseSong = function(song) {
-      SongPlayer.pause();
-    };
-}]);
+    SongPlayer.setSong($scope.album, song);
+    SongPlayer.play();
+   }; 
+
+   $scope.pauseSong = function(song) {
+    SongPlayer.pause();
+   };
+ }])
 
  blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
     $scope.songPlayer = SongPlayer;

@@ -62,6 +62,7 @@
   height: 100%;
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 
 /* flip speed goes here */
@@ -110,7 +111,10 @@
  .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
-    
+
+.album-name ng-binding {
+	text-align: center;
+}
   
 
   @media screen and (min-width: 769px) {
